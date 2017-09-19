@@ -40,10 +40,10 @@ def get_welcome_response():
     should_end_session = True
 
     card_title = "Welcome"
-    speech_output = "Welcome to the Hello World Alexa Skill Kit sample."
+    speech_output = "Welcome to the Greeter Alexa Skill Kit sample."
 
     return build_response(session_attributes, build_speechlet_response(
-        card_title, speech_output, reprompt_text, should_end_session))
+        card_title, speech_output, None, should_end_session))
 
 
 def greet_hello_world(intent, session):
